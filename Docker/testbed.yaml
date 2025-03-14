@@ -1,0 +1,69 @@
+devices:
+  R1:
+    connections:
+      cli:
+        ip: 192.168.1.253
+        protocol: ssh
+    credentials:
+      default:
+        password: Z4kcandle123!
+        username: admin
+      enable:
+        password: Z4kcandle123!
+    os: iosxe
+    type: iosxe
+  R2:
+    connections:
+      cli:
+        ip: 192.168.1.252
+        protocol: ssh
+    credentials:
+      default:
+        password: Z4kcandle123!
+        username: admin
+      enable:
+        password: Z4kcandle123!
+    os: iosxe
+    type: iosxe
+  SW1:
+    connections:
+      cli:
+        ip: 192.168.1.251
+        protocol: ssh
+    credentials:
+      default:
+        password: Z4kcandle123!
+        username: admin
+      enable:
+        password: Z4kcandle123!
+    os: iosxe
+    type: switch
+  SW2:
+    connections:
+      cli:
+        ip: 192.168.1.250
+        protocol: ssh
+    credentials:
+      default:
+        password: Z4kcandle123!
+        username: admin
+      enable:
+        password: Z4kcandle123!
+    os: iosxe
+    type: switch
+    
+  PC1:
+    type: "host"
+    os: "linux"
+    platform: alpine
+    credentials:
+      default:
+        username: ubuntu
+        password: cisco
+    connections:
+      cli:
+        protocol: ssh
+        ip: 192.168.1.10
+        port: 22
+        arguments:
+          connection_timeout: 360    
